@@ -6,75 +6,68 @@ import java.util.*;
 
 public class Docente {
     
-    private int codigoD;
-    private int cedula;
-    private String nombre;
-    private String apellido;
-    private String direccion;
-    private Date fechanaciemiento;
+    
+    private String cedula;
+    private String nombres;
+    private String apellidos;
+    private String direcciopn;
+    private Date fechaNaciemiento;
     private String email;
     private String telefono;
+    private int codigoD;
 
     public Docente() {
     }
 
-    public Docente(int codigoD, int cedula, String nombre, String apellido, String direccion, Date fechanaciemiento, String email, String telefono) {
-        this.codigoD = codigoD;
+    public Docente(String cedula, String nombres, String apellidos, String direcciopn, Date fechaNaciemiento, String email, String telefono, int codigoD) {
         this.cedula = cedula;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.direccion = direccion;
-        this.fechanaciemiento = fechanaciemiento;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.direcciopn = direcciopn;
+        this.fechaNaciemiento = fechaNaciemiento;
         this.email = email;
         this.telefono = telefono;
-    }
-
-    public int getCodigoD() {
-        return codigoD;
-    }
-
-    public void setCodigoD(int codigoD) {
         this.codigoD = codigoD;
     }
 
-    public int getCedula() {
+    public String getCedula() {
         return cedula;
     }
 
-    public void setCedula(int cedula) {
+    public void setCedula(String cedula) {
         this.cedula = cedula;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getNombres() {
+        return nombres;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getApellidos() {
+        return apellidos;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
 
-    public String getDireccion() {
-        return direccion;
+    public String getDirecciopn() {
+        return direcciopn;
     }
 
-    public void setDireccion(String direccion) {
-        this.direccion = direccion;
+    public void setDirecciopn(String direcciopn) {
+        this.direcciopn = direcciopn;
     }
 
-    public Date getFechanaciemiento() {
-        return fechanaciemiento;
+    public Date getFechaNaciemiento() {
+        return fechaNaciemiento;
     }
 
-    public void setFechanaciemiento(Date fechanaciemiento) {
-        this.fechanaciemiento = fechanaciemiento;
+    public void setFechaNaciemiento(Date fechaNaciemiento) {
+        this.fechaNaciemiento = fechaNaciemiento;
     }
 
     public String getEmail() {
@@ -92,7 +85,15 @@ public class Docente {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
-    
+
+    public int getCodigoD() {
+        return codigoD;
+    }
+
+    public void setCodigoD(int codigoD) {
+        this.codigoD = codigoD;
+    }
+
     
     
 }

@@ -8,63 +8,72 @@ public class CursoSeminarios {
         
         
         private Docente Docente;
-        private int Cod_Curso;
-        private String Nombre;
-        private int Horas;
-        private String Direccion;
-        private String Descripcion;
+        private String nombreCursoSeminario;
+        private int Hhras;
+        private String Ubicacion;
+        private String descripcion;
+        private int codCursoSeminario;
 
     public CursoSeminarios() {
     }
 
-    public CursoSeminarios(Docente Docente, int Cod_Curso, String Nombre, int Horas, String Direccion, String Descripcion) {
+    public CursoSeminarios(Docente Docente, String nombreCursoSeminario, int Hhras, String Ubicacion, String descripcion, int codCursoSeminario) {
         this.Docente = Docente;
-        this.Cod_Curso = Cod_Curso;
-        this.Nombre = Nombre;
-        this.Horas = Horas;
-        this.Direccion = Direccion;
-        this.Descripcion = Descripcion;
+        this.nombreCursoSeminario = nombreCursoSeminario;
+        this.Hhras = Hhras;
+        this.Ubicacion = Ubicacion;
+        this.descripcion = descripcion;
+        this.codCursoSeminario = codCursoSeminario;
     }
 
-    public int getCod_Curso() {
-        return Cod_Curso;
+    public Docente getDocente() {
+        return Docente;
     }
 
-    public void setCod_Curso(int Cod_Curso) {
-        this.Cod_Curso = Cod_Curso;
+    public void setDocente(Docente Docente) {
+        this.Docente = Docente;
     }
 
-    public String getNombre() {
-        return Nombre;
+    public String getNombreCursoSeminario() {
+        return nombreCursoSeminario;
     }
 
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public void setNombreCursoSeminario(String nombreCursoSeminario) {
+        this.nombreCursoSeminario = nombreCursoSeminario;
     }
 
-    public int getHoras() {
-        return Horas;
+    public int getHhras() {
+        return Hhras;
     }
 
-    public void setHoras(int Horas) {
-        this.Horas = Horas;
+    public void setHhras(int Hhras) {
+        this.Hhras = Hhras;
     }
 
-    public String getDireccion() {
-        return Direccion;
+    public String getUbicacion() {
+        return Ubicacion;
     }
 
-    public void setDireccion(String Direccion) {
-        this.Direccion = Direccion;
+    public void setUbicacion(String Ubicacion) {
+        this.Ubicacion = Ubicacion;
     }
 
     public String getDescripcion() {
-        return Descripcion;
+        return descripcion;
     }
 
-    public void setDescripcion(String Descripcion) {
-        this.Descripcion = Descripcion;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
+
+    public int getCodCursoSeminario() {
+        return codCursoSeminario;
+    }
+
+    public void setCodCursoSeminario(int codCursoSeminario) {
+        this.codCursoSeminario = codCursoSeminario;
+    }
+
         
         
         
