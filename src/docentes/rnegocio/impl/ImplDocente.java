@@ -14,7 +14,7 @@ public class ImplDocente implements IDocente {
     @Override
     public int insertar(Docente docente) throws Exception {
         int numFilasAfectadas = 0;
-        String sql = "Insert Into Docente (cedula, nombres, apellidos, direcciopn, fechaNacimineto, email, telefono, codDocente) Values (?,?,?,?,?,?,?,?)";
+        String sql = "Insert Into Docente (cedula, nombres, apellidos, direcciopn, fechaNacimiento, email, telefono, codDocente) Values (?,?,?,?,?,?,?,?)";
         ArrayList<Parametro> listParametro = new ArrayList<>();
         listParametro.add(new Parametro(1, docente.getCedula()));
         listParametro.add(new Parametro(2, docente.getNombres()));
@@ -45,7 +45,7 @@ public class ImplDocente implements IDocente {
     @Override
     public int modificar(Docente docente) throws Exception {
         int numFilasAfectadas = 0;
-        String sql = "UPDATE Docente SET cedula=?, nombres=?, apellidos=?, direcciopn=?, fechaNacimineto=?, email=?, telefono=?, codDocente=? WHERE codDocente=?";
+        String sql = "UPDATE Docente SET cedula=?, nombres=?, apellidos=?, direcciopn=?, fechaNacimiento=?, email=?, telefono=?, codDocente=? WHERE codDocente=?";
         ArrayList<Parametro> listParametro = new ArrayList<>();
         listParametro.add(new Parametro(1, docente.getCedula()));
         listParametro.add(new Parametro(2, docente.getNombres()));
@@ -96,7 +96,7 @@ public class ImplDocente implements IDocente {
     @Override
     public Docente obtener(int codigo) throws Exception {
         Docente docente = null;
-        String sql = "Select cedula, nombres, apellidos, direcciopn, fechaNacimineto, email, telefono, codDocente From Docente where codDocente=?";
+        String sql = "Select cedula, nombres, apellidos, direcciopn, fechaNacimiento, email, telefono, codDocente From Docente where codDocente=?";
         ArrayList<Parametro> listadoParametros = new ArrayList<>();
         listadoParametros.add(new Parametro(1, codigo));
         Conexion conec = null;
@@ -128,7 +128,7 @@ public class ImplDocente implements IDocente {
     public ArrayList<Docente> obtener() throws Exception {
         Docente docente = null;
         ArrayList<Docente> lista = new ArrayList<>();
-        String sql = "SELECT codigo_c, descripcion FROM CursoSeminarios";
+        String sql = "Select cedula, nombres, apellidos, direcciopn, fechaNacimiento, email, telefono, codDocente From Docente";
         Conexion conec = null;
         try {
             conec = new Conexion();
