@@ -3,13 +3,9 @@ package docentes.rnegocio.entidades;
 
 
 public class CursoSeminarios {
-
-   
-        
-        
         private Docente Docente;
         private String nombreCursoSeminario;
-        private int Hhras;
+        private int horas;
         private String Ubicacion;
         private String descripcion;
         private int codCursoSeminario;
@@ -17,10 +13,10 @@ public class CursoSeminarios {
     public CursoSeminarios() {
     }
 
-    public CursoSeminarios(Docente Docente, String nombreCursoSeminario, int Hhras, String Ubicacion, String descripcion, int codCursoSeminario) {
+    public CursoSeminarios(Docente Docente, String nombreCursoSeminario, int horas, String Ubicacion, String descripcion, int codCursoSeminario) {
         this.Docente = Docente;
         this.nombreCursoSeminario = nombreCursoSeminario;
-        this.Hhras = Hhras;
+        this.horas = horas;
         this.Ubicacion = Ubicacion;
         this.descripcion = descripcion;
         this.codCursoSeminario = codCursoSeminario;
@@ -42,12 +38,12 @@ public class CursoSeminarios {
         this.nombreCursoSeminario = nombreCursoSeminario;
     }
 
-    public int getHhras() {
-        return Hhras;
+    public int gethoras() {
+        return horas;
     }
 
-    public void setHhras(int Hhras) {
-        this.Hhras = Hhras;
+    public void sethoras(int horas) {
+        this.horas = horas;
     }
 
     public String getUbicacion() {
