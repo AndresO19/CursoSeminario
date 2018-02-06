@@ -4,6 +4,7 @@ package docentes.rnegocio.impl;
 import docentes.rnegocio.dao.*;
 import docentes.rnegocio.impl.*;
 import docentes.rnegocio.entidades.*;
+import accesodatos.*;
 import java.util.*;
 import java.sql.*;
 
@@ -15,8 +16,8 @@ public class ImplDocente implements IDocente {
         int numFilasAfectadas = 0;
         String sql = "insert into CursoSeminarios (codigo_c, descripcion) values (?,?)";
         ArrayList<Parametro> listParametro = new ArrayList<>();
-        listParametro.add(new Parametro(1, curso.getCodigo()));
-        listParametro.add(new Parametro(2, curso.getDescripcion()!=null?curso.getDescripcion():null));
+        listParametro.add(new Parametro(1, docente.getCedula()));
+        listParametro.add(new Parametro(2, curso.getDescripcion());
         Conexion conec = null;
         try {
             conec = new Conexion();
