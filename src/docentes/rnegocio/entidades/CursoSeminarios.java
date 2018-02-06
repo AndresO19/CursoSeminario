@@ -38,11 +38,11 @@ public class CursoSeminarios {
         this.nombreCursoSeminario = nombreCursoSeminario;
     }
 
-    public int gethoras() {
+    public int getHoras() {
         return horas;
     }
 
-    public void sethoras(int horas) {
+    public void setHoras(int horas) {
         this.horas = horas;
     }
 
